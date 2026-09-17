@@ -3,7 +3,7 @@ import { event } from "../data/event";
 
 const coreTeam = [
   { name: "Sania Verma", role: "Captain", linkedin: "#" },
-  { name: "Laavanya Kushwaha", role: "Core", linkedin: "#" },
+  { name: "Laavanya Kushwaha", role: "Content Core", linkedin: "#" },
   { name: "Aneshya Das", role: "Media Core", linkedin: "#" },
   { name: "Vidhi Saxena", role: "Tech Core", linkedin: "#" },
   { name: "Adharika Mahajan", role: "PR Core", linkedin: "#" },

@@ -3,7 +3,7 @@ import { pastEvents } from "../data/event";
 
 const namedTeam = [
   { name: "Sania Verma", role: "Captain" },
-  { name: "Laavanya Kushwaha", role: "Core" },
+  { name: "Laavanya Kushwaha", role: "Content Core" },
   { name: "Aneshya Das", role: "Media Core" },
   { name: "Vidhi Saxena", role: "Tech Core" },
   { name: "Adharika Mahajan", role: "PR Core" },
