@@ -1,16 +1,31 @@
-# React + Vite
+# AWS Student Community Day: Cloud Launchpad (Revamp)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A complete, ground-up redesign of the AWS Student Community Day website into a modern, student-focused event platform. Built to serve as the digital hub for the 2026 "Cloud Launchpad" edition hosted by the AWS Student Builder Group at IGDTUW.
 
-Currently, two official plugins are available:
+This revamp shifts the platform from a static information page into an interactive attendee journey, focusing on product sense, clean information architecture, and a cyberpunk dark-neon aesthetic that matches the actual club's identity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+*   **Cyberpunk UI & Tailwind v4:** Fully custom dark-theme interface utilizing the latest Tailwind CSS v4 and Vite for lightning-fast HMR and optimized builds.
+*   **Smart Registration Flow:** Custom form validation that explicitly rejects generic personal domains (Gmail/Yahoo) to ensure registrations are restricted to valid university student emails.
+*   **Interactive Schedule:** A detailed, single-track schedule featuring interactive glossary popovers for beginners and custom hover-bridge cards to view speaker details and LinkedIn profiles without losing cursor focus.
+*   **Rich Past Events Archive:** A dedicated archive featuring full-sized speaker cards, centered sponsor layouts with true-to-life logos, and a custom-built image carousel for event moments (no external carousel library required).
+*   **Standalone Society Hub:** A dynamically routed, visually distinct `/society` page showcasing the year-round club activities, core team members, and future cohorts—keeping the main event page entirely focused on Cloud Launchpad.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the Oxlint configuration
+*   **Framework:** React 18
+*   **Tooling:** Vite
+*   **Styling:** Tailwind CSS (v4)
+*   **Routing:** React Router DOM (v6)
+*   **Deployment:** Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 📁 Project Structure
+
+*   `/src/components/` - Reusable UI elements (`SessionCard`, `PastEventCard`, `GlossaryTerm`, `Carousel`, `Layout`)
+*   `/src/pages/` - Full-page route components (`Home`, `Schedule`, `Register`, `PastEvents`, `About`, `Society`)
+*   `/src/data/` - Single source of truth for all event data, schedules, and past event archives (`event.js`)
+*   `/src/index.css` - Global styles and Tailwind v4 theme configurations
+
+---
+**Author:** Keerti Gupta
