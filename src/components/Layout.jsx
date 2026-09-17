@@ -6,7 +6,7 @@ const navItems = [
   { to: "/schedule", label: "Schedule" },
   { to: "/register", label: "Register" },
   { to: "/past-events", label: "Past Events" },
-  { to: "/about", label: "About the Group" },
+  { to: "/about", label: "About" },
   { to: "/venue", label: "Venue & FAQ" },
 ];
 
@@ -61,7 +61,7 @@ export default function Layout() {
           <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
             <p>
               Organised by{" "}
-              <NavLink to="/about" className="text-neon-cyan hover:underline">
+              <NavLink to="/society" className="text-neon-cyan hover:underline">
                 {event.organiser}
               </NavLink>
             </p>

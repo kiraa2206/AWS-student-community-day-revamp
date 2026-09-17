@@ -17,7 +17,7 @@ export default function Schedule() {
             time={step.time}
             title={step.title}
             description={step.fullDescription}
-            speaker={step.speaker}
+            speakers={step.speakers}
             location={step.location}
             level={step.level}
             glossaryTerms={

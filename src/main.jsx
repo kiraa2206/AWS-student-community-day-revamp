@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import PastEvents from "./pages/PastEvents";
 import About from "./pages/About";
 import VenueFAQ from "./pages/VenueFAQ";
+import Society from "./pages/Society";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -22,6 +23,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="/about" element={<About />} />
           <Route path="/venue" element={<VenueFAQ />} />
         </Route>
+        {/* Society page is a separate site — its own header/footer, not the event's Layout */}
+        <Route path="/society" element={<Society />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
